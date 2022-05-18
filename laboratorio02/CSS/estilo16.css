@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2? family= Raleway:ital,wght@1,100 & display=swap');
+
+body{
+    background-color: bisque;
+}
+.contenedor{
+    background-color: white;
+    margin: auto;
+}
+.fuente1{
+    font-family:'Raleway', sans-serif;
+}
+.fuente2{
+    font-family:'Mukta', sans-serif;
+}
+.fuente3{
+    font-style: italic;
+}
+.fuente4{
+    font-style: oblique;
+}
+.fuente5{
+    font-style: normal;
+}
+.fuente6{
+    font-weight: bold;
+}
+.fuente7{
+    font-weight: bolder;
+}
+.fuente8{
+    font-style: small;
+}
+.fuente9{
+    font-variant: small-caps;
+}
+.fuente10{
+    font-size: 25px;
+}
+.fuente11{
+    font-variant: normal;
+}
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("/fonts/Lobster-Regular.ttf")
+
+}
+@font-face {
+    font-family: "PermanetMarker-Regular";
+    src: url("/fonts/PermanentMarker-Regular.ttf");
+}
+@font-face {
+    font-family: "batman";
+    src: url("/fonts/batman1.ttf");
+}
+@font-face {
+    font-family: "Transformers";
+    src: url("/fonts/TransformersMovie.ttf");
+}
+.fuente12{
+    font-family: "Lobster-Regular";
+}
+.fuente13{
+    font-family: "PermanetMarker";
+}
+.fuente14{
+    font-family: "batman";
+}
+.fuente15{
+    font-family: "Transformers";
+}
