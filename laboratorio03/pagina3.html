@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Pagina 3</title>
+    <script type="text/javascript">
+        
+        /*Estructuras logicas
+        // las estructuras logicas permiten generar codigos mas complejoa y se clasifican en:
+        // condicionales
+        // selectivas
+        // repetitivas*/
+
+        // Condicionales: Son estructuras que dependen de una condicion.
+        // es una evaluacion que puede devolver un valor que sea verdadero o falso
+        // Ejemplo:
+        // 7 > 5 - verdadero
+        // 11 < 9 - falso
+        // x > 10 - depende del valor de x 
+        // Las estructuras condicionales se clasifican en:
+        // Simples 
+        // Dobles
+        // Anidadas
+        // Condicionales simples:
+        // devuelven un valor siempre y cuando la condicion sea verdadera.
+        // sintaxis
+        // if(condicion){
+        //    ......
+        // }
+
+        /*Ejemplo 1: Desarrollar una apliccion que permita ingresar 3 notas y luego calcular el promedio. Si el promedio es mayor o igual a 13 se mostrara un mensaje indicando Aprobado*/
+        //¿cuantas variables necesito?
+        //5
+        //¿que tipos de datos necesito?
+        //real,texto
+        //¿como se llamarian las variables?
+        //n1, n2, n3, prom, men
+        //¿que valores voyn a leer?
+        //n1, n2, n3
+        //¿cual seria la operacion?
+        //prom=(n1+n2+n3)/3
+
+        //Declarando variables
+        var n1=0, n2=0, n3=0, prom=0, men="";
+
+        //Capturando valores
+        n1=parseFloat(prompt("Ingerese la nota 1:"));
+        n2=parseFloat(prompt("Ingerese la nota 2:"));
+        n3=parseFloat(prompt("Ingerese la nota 3:"));
+
+        //Realizando operaciones
+        prom=(n1+n2+n3)/3;
+
+        //Condicion
+        if(prom>=13){
+            men="Aprobado"
+        }
+
+        //Mostrando resultados
+        document.write("El promedio es: " +prom+"<br>");
+        document.write("Condicion:"+men+"<br>");
+        document.write("<hr>");
+
+        /*Ejemplo 2: Desarrolar una aplicacion que permita calcular el sueldo de un trabajador, si se sabe que se ingresa el sueldo basico y tambien la categoria en la cual trabaja. Si el gtrabajador perteneces a la categoria 3 se le calculara una bonificacion del 7% y un descuento delñ 5% del sueldo basico. Mostrar todos los resultados*/
+        //¿cuantas variables necesito?
+        //5
+        //¿que tipos de datos necesito?
+        //real,entero
+        //¿como se llamarian las variables?
+        //sb, ca, bon, des, sf
+        //¿que valores voyn a leer?
+        //sb, cat
+        //¿cual seria la operacion?
+        //bon=sb*0.07
+        //des=sb*0.05
+        //sf=sb+bon-des
+
+        //declarando variables
+        var sb=0, cat=0, bon=0, des=0, sf=0;
+
+        sb=parseFloat(prompt("Ingrese el sueldo basico:"));
+        cat=parseInt(prompt("Ingresa la categoria:"));
+
+        //condicion
+        if(cat==3){
+            bon=sb*0.07
+            des=sb*0.05
+        }
+        sf=sb+bon-des;
+
+        //mostrando resultados
+        document.write("El sueldo basico es:"+sb+"<br>");
+        document.write("La bonificacion es:"+bon+"<br>");
+        document.write("El descuento es:"+des+"<br>");
+        document.write("El sueldo final es:"+sf+"<br>");
+        document.write("<hr>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
