@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Pagina 6</title>
+    <script type="text/javascript">
+        /*
+        conector logico y
+        es verdadero si todas las condiciones son verdaderas
+
+        Sintaxix
+        if(condicion1 && condicion2) --> v && v --> v
+        if(condicion1 && condicion2) --> v && f --> f
+        if(cin1 && con2 && con3 && con4) --> v && v && v && v --> v
+        if(cin1 && con2 && con3 && con4) --> v && v && v && f --> f
+
+        conector logico o
+        es falso si todas las condiciones son falsas
+        if(condicion1 || condicion2) --> v || v --> v
+        if(condicion1 || condicion2) --> v && f --> f
+        if(cin1 || con2 || con3 || con4) --> v && v && v && v --> v
+        if(cin1 || con2 || con3 || con4) --> v && v && v && f --> f
+        */
+
+        /*Ejemplo 1: Desarrolar una aplicacion que permita calcular el sueldo final de u trabajador, si se sabe que si perteneces a la categoria 2 y su turno es mañana se le aplicara una bonificacion del 7% , en caso contrario no se le aplicara ninguna bonificacion. Mostrar todos los resultados*/
+        //¿cuantas variables necesito?
+        //5
+        //¿que tipos de datos necesito?
+        //real, entero y texto
+        //¿como se llamarian las variables?
+        //sb, cat, tur, bon, sf
+        //¿que valores voyn a leer?
+        //sb, cat, tur
+
+        //definiendo variables
+        var sb=0, cat=0, tur="", bon=0, sf=0
+
+        //capturando valores
+        sb=parseFloat(prompt("Ingrese el sueldo basico:"));
+        cat=parseInt(prompt("Ingrese la categoria:"));
+        tur=prompt("Ingrese el turno [M]o[T]o[N]:")
+
+        //condicion
+        if(cat==2 && tur=="m"){
+            bon=sb*0.07;
+        }else{
+            bon=0;
+        }
+        sf=sb+bon;
+
+        //mostrando resultados
+        document.write("El sueldo basico es:"+sb+"<br>");
+        document.write("La bonificacion es:"+bon+"<br>");
+        document.write("El sueldo final es:"+sf+"<br>");
+        document.write("<hr>");
+
+        /*Ejemplo 2: Desarrolar una aplicacion que permita ingresar 3 numeros y luego calcular el mayor y el menor de los numeros. Mostrar el mayor y el menor */
+        //¿cuantas variables necesito?
+        //5
+        //¿que tipos de datos necesito?
+        //real,
+        //¿como se llamarian las variables?
+        //n1, n2, n3, my, mn
+        //¿que valores voyn a leer?
+        //n1, n2, n3
+
+        //definiendo variables
+        var n1=0, n2=0, n3=0, my=0, mn=0;
+
+        //capturando valores
+        n1=parseFloat(prompt("Ingrese le numero 1:"));
+        n2=parseFloat(prompt("Ingrese le numero 2:"));
+        n3=parseFloat(prompt("Ingrese le numero 3:"));
+
+        //condicion
+        if(n1>n2 && n1>n3){
+            my=n1;
+        }else{
+            if(n2>n1 && n2>n3){
+                my=n2;
+            }else{
+                my=n3;
+            }
+        }
+        if(n1<n2 && n1<n3){
+            mn=n1;
+        }else{
+            if(n2<n1 && n2<n3){
+                mn=n2;
+            }else{
+                mn=n3;
+            }
+        }
+        
+        //mostrando resultados
+        document.write("El numero mayor es:" +my+"<br>");
+        document.write("El numero menor es:" +mn+"<br>");
+        document.write("<hr>");
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
