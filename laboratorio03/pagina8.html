@@ -6,92 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript - Pagina 8</title>
     <script type="text/javascript">
-        /*Estructuras repetitivas
-        te permite repetir un bloque de codigo
-        se clasifican en 3
-        Mientras -> while
-        Repetir -> do while
-        Para -> for
-        contador es una variable que permite llevar la cuenta de cuantas vueltas esta relizando el bucle, es importante poder tener un comntador , si no se generaria un bucle infinito
-        sintaxis
-        contador=contador+valor; -> valor es de cuanto en cuanto aumenta las repeticiones*/
-        /*
-        sintaxis del while
-        while(condicion){
-            ... programas ...
-            cont=cont+valor;
-        }
-
-        sintaxis do while
-        do{
-            ... programas ...
-            cont=cont+valor;
-        }while(condicion);
-
-        sintaxix for
-        for(i=valor_inicial; i<valor_final;i++){
-            ... programas ...
-        }
-
-        Cuando el contador aumenta de uno en uno su sintaxis es la 
-        siguiente: cont=cont+1  pero se puede reemplazar por la 
-        siguiente: cont++;
-        */
-        /*Ejemplo 1: Desarrollar una aplicacion que permita ingresar un nombre y luego mostar un saludo 5 veces*/
-        
-        //definiendo variables
         var nom="", cont=1;
-
-        //capturando valores
-        nom=prompt("Ingresa tu nombre:");
-
-        //while
+        nom=prompt("Ingresa tu nombre: ");
         while(cont<=5){
             document.write("Hola como estas "+nom+"<br>");
             cont++;
         }
-
-        //do while
         cont=1;
         do{
             document.write("Hola como estas "+nom+"<br>");
             cont++;
         }while(cont<=5);
-
-        //for
         cont=1;
         for(i=1;cont<=5;cont++){
             document.write("Hola como estas "+nom+"<br>");
         }
-        document.write("<hr>");
-        
-        /*Ejemplo 2: Desarrolar una aplicacion que permita mostar los n primeros numeros naturales*/
-
-        //definiendo variables
+        document.write("<hr>")
+        //
         var cont=1, can=0;
-
-        //capturando valores
-        can=parseInt(prompt("Ingresa la cantidad de numeros:"));
-
-        //while
+        can=parseInt(prompt("Ingresa la cantidad de numeros: "));
         while(cont<=can){
             document.write(cont+"<br>");
             cont++;
         }
-
-        //do while
         cont=1;
         do{
             document.write(cont+"<br>");
             cont++;
         }while(cont<=can);
-
-        //for
         cont=1;
         for(cont;cont<=can;cont++){
             document.write(cont+"<br>");
         }
-
+        document.write("<hr>")
+        //
+        var cont=1, sum=0;
+        while(cont<=10){
+            sum=sum+cont;
+            cont=cont+1;
+        }
+        document.write("La suma de los 10 valores es: "+sum+"<br>");
+        cont=1;
+        sum=0;
+        do{
+            sum=sum+cont;
+            cont++;
+        }while(cont<=10);
+        document.write("La suma de los 10 valores es: "+sum+"<br>");
+        cont=1;
+        sum=0;
+        for(cont;cont<=10;cont++){
+            sum=sum+cont;
+        }
+        document.write("La suma de los 10 valores es: "+sum+"<br>");
+        document.write("<hr>");
+        //
+        var cont=1, sum=0, can=0;
+        can=parseInt(prompt("Ingresa la cantidad de numeros a sumar: "));
+        while(cont<=can){
+            sum=sum+cont;
+            cont=cont+1;
+        }
+        document.write("La suma de los n valores es: "+sum+"<br>");
+        cont=1;
+        sum=0;
+        do{
+            sum=sum+cont;
+            cont++;
+        }while(cont<=can);
+        document.write("La suma de los n valores es: "+sum+"<br>");
+        cont=1;
+        sum=0;
+        for(cont;cont<=can;cont++){
+            sum=sum+cont;
+        }
+        document.write("La suma de los n valores es: "+sum+"<br>");
+        document.write("<hr>")
+        //
+        var cont=1, num=0, can=0;
+        can=parseInt(prompt("Ingresa la cantidad de numeros; "));
+        num=parseInt(prompt("Ingrese el numero de la tabla "));
+        while(cont<=can){
+            document.write(num+" X "+cont+" = "+(num*cont)+"<br>");
+            cont++;
+        }
+        cont=1;
+        do{
+            document.write(num+" X "+cont+" = "+(num*cont)+"<br>");
+            cont++;
+        }while(cont<=can);
+        cont=1;
+        for(cont;cont<=can;cont++){
+            document.write(num+" X "+cont+" = "+(num*cont)+"<br>");
+        }
+        document.write("<hr>")
     </script>
 </head>
 <body>

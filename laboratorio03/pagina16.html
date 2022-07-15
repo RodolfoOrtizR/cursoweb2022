@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Pagina 16</title>
+    <script type="text/javascript">
+        /*Arreglos
+        Loa arreglos son espacio de mmemoria RAM que permiten alamacenar mas de un valor a la vez, pero de un solo tipo de datos.
+        Loa arreglos se clasifican en:
+        Vectores y Matrices
+        Vectores: Son arreglos de una sola dimension
+        creacion del vector
+        Sintaxis:
+        var nombre_vector=[valores];
+        Todo vector inicia con el indice 0
+        */
+        //Ejemplo 1: Crear un vector con las estaciones del año
+        var estaciones=["verano", "otoño", "invierno", "primavera"];
+
+        //conocer el tamaño del vector
+        //nombre del vector.length
+        document.write("El tamaño del vector es: "+estaciones.length+"<br>");
+
+        //quieres mostrar el primer valor del vector
+        document.write("El primer valor del vector es: "+estaciones[0]+"<br>");
+
+        //Mostar todos los datos del vector
+        for(var i=0;i<estaciones.length;i++){
+            document.write("El valor "+(i+1)+"del vector es: "+estaciones[i]+"<br>");
+        }
+
+        //Añadir un elemento al final del vector
+        estaciones.push("Ya no hay mas estaciones");
+        document.write("El tamaño del vector es: "+estaciones.length+"<br>");
+        for(var i=0;i<estaciones.length;i++){
+            document.write("El valor "+(i+1)+"del vector es: "+estaciones[i]+"<br>");
+        }
+
+        //Elimina el elemnto del final
+        estaciones.pop();
+        document.write("El tamaño del vector es: "+estaciones.length+"<br>");
+        for(var i=0;i<estaciones.length;i++){
+            document.write("El valor "+(i+1)+"del vector es: "+estaciones[i]+"<br>");
+        }
+
+        //Eliminar un elemnto antes del inicio del vector
+        estaciones.shift();
+        document.write("El tamaño del vector es: "+estaciones.length+"<br>");
+        for(var i=0;i<estaciones.length;i++){
+            document.write("El valor "+(i+1)+"del vector es: "+estaciones[i]+"<br>");
+        }
+
+        //Encontar el indice del vector correspondiente a otoño
+        var indice=0;
+        indice=estaciones.indexOf("otoño");
+        document.write("El indice de otoño es: "+indice+"<br>");
+
+        //Eliminar un valor del vector por posicion
+        var indice=0;
+        indice=estaciones.indexOf("primavera");
+        estaciones.splice(indice,1);
+        document.write("El tamaño del vector es: "+estaciones.length+"<br>");
+        for(var i=0;i<estaciones.length;i++){
+            document.write("El valor "+(i+1)+"del vector es: "+estaciones[i]+"<br>");
+        }
+
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>
